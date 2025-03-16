@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --mainFont: "Rubik", sans-serif;
+  --mainColor: #1cb2ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--mainFont);
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.logo {
+  width: 9%;
+}
+nav ul li .custom-nav-iteam a {
+  color: #ffffff;
+}
+.profile {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  opacity: 0.5;
+  color: #808080;
+  background-color: #f7f7f7;
+}
+.user-icon path {
+  fill: #d8d8d8;
+  stroke: #323030;
+  background: #373434;
+}
+.navbar {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1500;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blue-background {
+  background: #0054a6;
+  padding: 1.3rem 1.7rem;
+}
+.ff {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: var(--mainColor);
+}
+.ddddd {
+  position: absolute;
+  right: 182px;
+  padding: 30px;
+  background-color: aquamarine;
+  color: #ffffff;
+}
+.dddd {
+  position: absolute;
+  left: 182px;
+  padding: 30px;
+  background-color: aquamarine;
+}
+.dropdown-menu {
+  border-radius: 5px;
+  padding: 0;
+  border-color: #0054a6;
+  border: 0;
+}
+.dropdown-menu[data-bs-popper] {
+  margin-top: -20px;
+} /* Ensure dropdown menu is hidden by default */
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-item:hover .nav-link {
+  background-color: #0054a6;
+  padding: 1.3rem 1.7rem;
+  border-radius: 5px;
+}
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.New-Span {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--mainColor);
+
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 0px 10px;
+  font-weight: 5;
+  font-size: 13px;
+}
+.modal-content {
+  width: 900px;
+}
+.modal-dialog {
+  right: 200px;
+  top: 100px;
+}
+.card {
+  border: 0;
+}
+.card .row {
+  flex-wrap: nowrap;
+}
+.background_img_login {
+  position: relative;
+  background-image: url("../img/login-modal.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.background_img_login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+.close-btn-postion {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #04040433;
+  font-size: 10px;
+  padding: 12px;
+}
+.text_color_black_23 {
+  color: #7a7a7a;
+}
+.text_color_main_color {
+  color: var(--mainColor);
+}
+.bg-color_main_color {
+  color: var(--mainColor);
+}
+/* .modern-login p {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modern-login p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 39px;
+  height: 1px;
+  background: var(--mainColor); 
+  margin-top: 20px; 
+} */
+.btn:hover {
+  background: var(--mainColor);
+}
+.hight-500px {
+  height: 400px;
+}
+.width-50px {
+  width: 50px;
+}
+.st0 {
+  fill: #fff;
+  position: relative;
+}
+
+.margin-left-50px {
+  margin-left: 50px;
+}
+.modern-text {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    font-size: 26px;
+  font-weight: 500;
+}
+.login-text{
+    font-size: 14px;
+    font-weight: inherit;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}.login-form-username-lable
+{ margin-left: 40px;
+    font-size: 14px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}.login-form-Password-lable{
+    margin-left: 40px;
+    font-size: 14px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}.login-form .form-control{
+    margin-left: 40px;
+    width:360px;
+} .login-form .login-form-Forget-Password{
+    color: gray;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .2s all ease-in-out;
+    line-height: 1.2;
+    padding-left: 40px;
+}.login-form .login-form-Forget-Password-div {
+    width:400px;
+}.login-form .login-form-submit-btn-div{
+    width:360px;
+    margin-left:40px;
+}  .login-first-left-paragraph{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;  
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 30px;
+}.login-left-side{
+    width: 500px;
+}.img-icon{
+    width: 30px;
+    height: 30px;
+    margin-left:30px;
+    margin-top: 30px;
+}.img-icon svg{
+    margin-left:30px;
+}.login-developer-name{
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    opacity: .5; 
+    width: 200px;
+    margin-left:30px;
+}.login-date-text{
+    font-size: 20px;
+    display: block;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 200px;
+  margin-left:30px;
+  margin-top: 40px;
+}.login-day-text{
+    font-size: 30px;
+  font-weight: 500;
+  display: block;
+  color: #fff;
+  margin-left:30px;
+}.message {
+  width: 200px;
+  height: 80px;
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 82%;
+  right: 250px;
+opacity: 0;
+}
+
+.user-icon:hover  {
+  .message{
+    opacity: 1;
+  }
+  
+}
+
+/* .message ::after {
+  content: "";
+  position: relative;
+
+} */
